@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: argo-rollouts-demo
+  name: argo-rollouts-demo-2
   namespace: argocd
 spec:
   clusterResourceWhitelist:
