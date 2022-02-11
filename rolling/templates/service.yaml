@@ -5,6 +5,8 @@ metadata:
   labels:
     {{- include "rolling.labels" . | nindent 4 }}
 spec:
+  selector:
+    {{- include "rolling.selectorLabels" . | nindent 6 }}
   type: {{ .Values.service.type }}
   ports:
     - name: http
