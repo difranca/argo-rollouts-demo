@@ -1,4 +1,4 @@
-# Default values for bluegreen.
+# Default values for rolling.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
@@ -47,7 +47,7 @@ ingress:
     kubernetes.io/ingress.class: nginx
 #     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: bluegreen.difranca.top
+    - host: rolling.difranca.top
       paths:
         - path: /
           pathType: ImplementationSpecific
@@ -63,7 +63,7 @@ ingressPreview:
     kubernetes.io/ingress.class: nginx
 #     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: bluegreen-preview.difranca.top
+    - host: rolling-preview.difranca.top
       paths:
         - path: /
           pathType: ImplementationSpecific
